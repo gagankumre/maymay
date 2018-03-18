@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "776111518270",
+    "firebase_url": "https://maymaycfd1.firebaseio.com",
+    "project_id": "maymaycfd1",
+    "storage_bucket": "maymaycfd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776111518270:android:a348955822aca08b",
+        "android_client_info": {
+          "package_name": "com.example.gagan.maymay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776111518270-0is9clkuh490oc9crlbl8dlcq1iavn4d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gagan.maymay",
+            "certificate_hash": "44fc4573c708e2934c29410793048d6ccb124ba6"
+          }
+        },
+        {
+          "client_id": "776111518270-vmd4fmtol3hhon832cno4tp95c56bgp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz8tJA6lGcSTlZAma7851XLOsey4_lwF8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776111518270-vmd4fmtol3hhon832cno4tp95c56bgp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

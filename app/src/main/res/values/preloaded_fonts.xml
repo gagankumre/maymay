@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/akronim</item>
+        <item>@font/alex_brush</item>
+        <item>@font/allerta_stencil</item>
+        <item>@font/almendra_display</item>
+        <item>@font/amita</item>
+        <item>@font/arbutus</item>
+        <item>@font/arbutus_slab</item>
+        <item>@font/bungee_shade</item>
+    </array>
+</resources>

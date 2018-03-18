@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.gagan.maymay.activity_profile">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editprofilebtn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/recyclerView2" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/amita"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_lower2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/homebtn2"
+        android:background="@android:color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageButton
+        android:id="@+id/notificationbtn2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/ivUser"
+        android:background="@android:color/black"
+        android:contentDescription="@string/notification"
+        app:srcCompat="@drawable/ic_notifications_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/homebtn2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp"
+        android:background="#000000"
+        android:contentDescription="@string/home"
+        app:srcCompat="@drawable/ic_home_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/createbtn2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/ic_create_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/profilebtn2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp"
+        android:background="@android:color/black"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/ic_account_circle_white_24dp" />
+
+    <ImageView
+        android:id="@+id/ivUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/profile_background"
+        android:layout_marginLeft="5pt"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_account_circle_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/bookmarkbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/useremailid"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="17dp"
+        android:background="#000000"
+        app:srcCompat="@drawable/ic_turned_in_white_24dp" />
+
+    <TextView
+        android:id="@+id/usernameid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/useremailid"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginStart="7dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/name"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/useremailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editprofilebtn"
+        android:layout_alignStart="@+id/usernameid"
+        android:layout_marginBottom="17dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/EMAIL"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/editprofilebtn"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ivUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/arbutus"
+        android:text="@string/edit_your_profile"
+        android:textColor="#EEEEEF"
+        android:textSize="18sp" />
+
+</RelativeLayout>

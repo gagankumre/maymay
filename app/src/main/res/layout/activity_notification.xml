@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gagan.maymay.Notification">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/recyclerView" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_lower3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageButton
+        android:id="@+id/notificationbtn3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/notification"
+        android:background="@android:color/black"
+        android:contentDescription="@string/notification"
+        android:elevation="0dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/ic_notifications_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/homebtn3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:background="#000000"
+        android:contentDescription="@string/home"
+        app:srcCompat="@drawable/ic_home_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/profilebtn3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:background="@android:color/black"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/ic_account_circle_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/createbtn3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/notification"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="false"
+        android:background="@android:color/black"
+        android:contentDescription="@string/pen"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/ic_create_white_24dp" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recyclerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="Notification"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp" />
+
+</RelativeLayout>

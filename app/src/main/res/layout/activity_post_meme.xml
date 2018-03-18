@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.gagan.maymay.PostMeme">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_lower4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageButton
+        android:id="@+id/notificationbtn4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView6"
+        android:background="@android:color/black"
+        android:contentDescription="@string/notification"
+        android:elevation="0dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/ic_notifications_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/homebtn4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:background="#000000"
+        android:contentDescription="@string/home"
+        app:srcCompat="@drawable/ic_home_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/profilebtn4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:background="@android:color/black"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/ic_account_circle_white_24dp" />
+
+    <ImageButton
+        android:id="@+id/createbtn4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="false"
+        android:background="@android:color/black"
+        android:contentDescription="@string/pen"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/ic_create_white_24dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:layout_alignBottom="@+id/toolbar4"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/amita"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/memepostbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/scrollView2"
+        android:background="#000000"
+        android:fontFamily="@font/amita"
+        android:text="Post"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar4"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar4"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:isScrollContainer="false">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/dank"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:text="DANK"
+                        android:textColor="@android:color/darker_gray"
+                        tools:text="Dank" />
+
+                    <Button
+                        android:id="@+id/memeception"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:text="memeception"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <Button
+                        android:id="@+id/mind"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:text="mind f**k"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <Button
+                        android:id="@+id/normie"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:text="normie"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <Button
+                        android:id="@+id/rage"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:text="rage"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <Button
+                        android:id="@+id/troll"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:text="troll"
+                        android:textColor="@android:color/darker_gray" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <EditText
+                android:id="@+id/textmeme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/arbutus_slab"
+                android:hint="Description"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="#444444"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/ivMemeCreatePost"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_crop_original_white_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="upload meme"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

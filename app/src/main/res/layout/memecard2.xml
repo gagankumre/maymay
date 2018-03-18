@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        app:cardBackgroundColor="#000000"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/mprofile2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/profile_background"
+                app:srcCompat="@drawable/ic_account_circle_white_24dp" />
+
+            <TextView
+                android:id="@+id/mname2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/mprofile2"
+                android:layout_marginStart="29dp"
+                android:layout_toEndOf="@+id/mprofile2"
+                android:text="TextView"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                tools:text="@string/name" />
+
+            <TextView
+                android:id="@+id/mhashtag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/mprofile2"
+                android:layout_below="@+id/mprofile2"
+                android:layout_marginTop="8dp"
+                android:text="#hashtag"
+                android:textColor="@color/cardview_light_background" />
+
+            <TextView
+                android:id="@+id/mdate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/mname2"
+                android:layout_below="@+id/mname2"
+                android:text="date"
+                android:textColor="@color/cardview_light_background" />
+
+            <TextView
+                android:id="@+id/mtime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/mdate2"
+                android:layout_below="@+id/mdate2"
+                android:text="time"
+                android:textColor="@color/cardview_light_background" />
+
+            <ImageButton
+                android:id="@+id/mbookmark2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/mname2"
+                android:layout_marginEnd="7dp"
+                android:background="#000000"
+                app:srcCompat="@drawable/ic_turned_in_not_white_24dp" />
+
+            <TextView
+                android:id="@+id/mmeme2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mhashtag2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/arbutus_slab"
+                android:layout_marginBottom="5pt"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
